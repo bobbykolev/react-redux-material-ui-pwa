@@ -5,5 +5,5 @@
 ##### (React 16, react-router 4)
 
 1. node > 8
-2. npm install
-3. npm start
+2. `npm install`
+3. `npm start`
