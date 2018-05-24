@@ -1,6 +1,6 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
-import { Route, Switch } from "react-router-dom";
+import {PropTypes} from 'prop-types';
+import {Route, Switch} from "react-router-dom";
 import NavigationDrawer from 'react-md/lib/NavigationDrawers';
 import NavLink from './NavLink';
 import Footer from './Footer';
@@ -21,12 +21,12 @@ const navItems = [{
     icon: 'info',
   }];
 
-class App extends React.PureComponent {
+class App extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
 
-  render () {
+  render() {
     return (
       <div>
         <NavigationDrawer
@@ -35,10 +35,10 @@ class App extends React.PureComponent {
           mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
           tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
           desktopDrawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
-          navItems={navItems.map(props => <NavLink {...props} key={props.to} />)}
+          navItems={navItems.map(props => <NavLink {...props} key={props.to}/>)}
         >
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Home}/>
             <Route path="/home" component={Home}/>
             <Route path="/about" component={About}/>
             <Route component={FourOhFour}/>
