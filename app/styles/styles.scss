@@ -1,0 +1,8 @@
+@import '~react-md/src/scss/_react-md';
+
+
+$md-primary-color: $md-blue-500;
+$md-secondary-color: $md-pink-300;
+
+@include react-md-everything;
+@import './base';
